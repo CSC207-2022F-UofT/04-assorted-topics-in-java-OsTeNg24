@@ -45,7 +45,7 @@ class DrivableMap {
      */
     public boolean hasFasterThan(int a) {
         for (Drivable val : drivable_map.values()) {
-            if(val.getMaxSpeed() >= a) {
+            if (val.getMaxSpeed() >= a) {
                 return true;
             }
         }
@@ -53,18 +53,14 @@ class DrivableMap {
     }
 
 
-
-
     /* TODO: Write a method named getTradable that takes no arguments and
      *       returns a List containing all of the Tradable items in
      *       drivable_map.
      */
-    public List<Tradable> getTradable(){
+    public List<Tradable> getTradable() {
         List<Tradable> lst = new ArrayList<>();
-        for(Drivable val : drivable_map.values())
-        {
-            if(val instanceof Tradable)
-            {
+        for (Drivable val : drivable_map.values()) {
+            if (val instanceof Tradable) {
                 lst.add((Tradable) val);
             }
         }
